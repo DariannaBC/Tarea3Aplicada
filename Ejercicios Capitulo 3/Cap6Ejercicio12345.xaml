@@ -1,0 +1,81 @@
+﻿<Window x:Class="Tarea3Aplicada.Ejercicios_Capitulo_3.Cap6Ejercicio12345"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea3Aplicada.Ejercicios_Capitulo_3"
+        mc:Ignorable="d"
+        Title="Cap6Ejercicio12345" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Digite la cantidad de aulas que hay en su escuela:"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="CantidadAulasTextBox" Width="50" Height="20"/>
+                <Button x:Name="CantidadAulasButton" Content="Procesar" Click="CantidadAulasButton_Click" Width="50" Height="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Digite la cantidad de alumnos que hay en su escuela:" x:Name="AlumnosLabel"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="CantidadAlumnosTextBox" Width="50" Height="20"/>
+                <Button x:Name="CantidadAlumnosButton" Content="Procesar" Click="CantidadAlumnosButton_Click" Width="50" Height="20" Margin="10,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Digite la calificacion del cada Alumno:" x:Name="CalificacionLabel"/>
+
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="CalificacionTextBox" Width="50" Height="20"/>
+                <Button x:Name="CalificacionButton" Content="Procesar" Click="CalificacionButton_Click" Margin="10,0" Width="50" Height="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Calificacion Promedio del Alumno" x:Name="PromedioLabel" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="PromedioTextBox" Width="50" Height="20"/>
+
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Calificacion Mayor del Alumno" x:Name="MayorLabel"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="CalificacionMayorTextBox" Width="50" Height="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Calificacion Menor del Alumno" x:Name="MenorLabel"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="CalificacionMenorTextBox" Width="50" Height="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Promedio General del Alumno" x:Name="PromedioGeLabel"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <TextBox x:Name="PromedioGeneralTextBox" Width="50" Height="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="300,0">
+                <Button x:Name="NuevoButton" Content="Nuevo" Click="NuevoButton_Click" Width="50" Height="20" Margin="10,0"/>
+                <Button x:Name="ContinuarButton" Content="Continuar" Click="ContinuarButton_Click" Width="50" Height="20" Margin="10,0"/>
+                <Button x:Name="CancelarButton" Content="Cancelar" Click="CancelarButton_Click" Width="50" Height="20" Margin="10,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10,0" >
+                <ListBox x:Name="ListaCalificacionesListBox" Height="350" Width="350" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
